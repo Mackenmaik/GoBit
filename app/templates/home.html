@@ -1,0 +1,47 @@
+{% extends "template.html" %}
+
+{% block head %}
+
+<!-- <script type="text/javascript">
+
+$('#link').one('click', function(ev){
+
+    ev.preventDefault();
+
+    var $self = $(this);
+
+            $('.get-bitcoin-button').css(
+                {"background-color" : "#FBB900",
+                "border" : "9px solid #2F2D27"}),
+                $('.bitcoin-header').hide();
+                $('.get-bitcoin-button').append("<h1 style='color: #2F2D27'>HI!</h1>" );
+                // , function(){
+
+                $(".get-bitcoin").delay(1000).queue(function( nxt ) {
+                    document.location = $('#link').delay(10000).attr('href');
+                    nxt();
+                });
+
+            // };
+
+
+});
+
+</script> -->
+
+{% endblock %}
+
+{% block content %}
+  <body class="noselect">
+
+  <a id="link" href="/getbitcoin/">
+    <div class="get-bitcoin">
+
+	      <div class="get-bitcoin-button">
+	        <h1 class="bitcoin-header">Get Bitcoin</h1>
+	      </div>
+
+    </div>
+    </a>
+
+{% endblock content %}
